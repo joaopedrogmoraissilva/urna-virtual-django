@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'urna.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',  # ou o back-end correspondente ao seu banco de dados
+        'NAME': 'blogdjango',
+        'USER': 'postgres',
+        'PASSWORD': 'racovica76',
+        'HOST': 'localhost',  # ou o endereço do seu servidor de banco de dados
+        'PORT': '5432',  # ou a porta correspondente ao seu banco de dados
     }
 }
+
 
 
 # Password validation
